@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/.">
+        <file>Lab 4 Images/google home.png</file>
+    </qresource>
+</RCC>
