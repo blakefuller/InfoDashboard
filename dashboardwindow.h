@@ -2,6 +2,7 @@
 #define DASHBOARDWINDOW_H
 
 #include <QMainWindow>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DashboardWindow; }
@@ -17,5 +18,8 @@ public:
 
 private:
     Ui::DashboardWindow *ui;
+    QTimer *timer;
+
+    void setCurrentTime();
 };
 #endif // DASHBOARDWINDOW_H
