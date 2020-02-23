@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -23,7 +23,7 @@ SOURCES += \
 
 HEADERS += \
     dashboardwindow.h \
-    todomodel.h
+    todomodel.h \
     httpmanager.h
 
 FORMS += \

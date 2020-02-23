@@ -42,3 +42,8 @@ void HttpManager::WeatherDownloadedHandler(QNetworkReply *reply)
 
     emit WeatherJsonReady(jsonObj);
 }
+
+void HttpManager::processWeatherJson(QJsonObject *json)
+{
+    qDebug() << json->value("weather");
+}

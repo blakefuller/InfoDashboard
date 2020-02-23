@@ -5,6 +5,7 @@
 #include <QTimer>
 #include <QTime>
 #include "todomodel.h"
+#include "httpmanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DashboardWindow; }
@@ -31,5 +32,6 @@ private:
     QTimer *timer;
 
     ToDoModel *toDoModel;
+    HttpManager *httpManager;
 };
 #endif // DASHBOARDWINDOW_H

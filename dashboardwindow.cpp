@@ -9,6 +9,7 @@ DashboardWindow::DashboardWindow(QWidget *parent)
     , ui(new Ui::DashboardWindow)
     , timer(new QTimer)
     , toDoModel (new ToDoModel(this))
+    , httpManager (new HttpManager)
 {
     ui->setupUi(this);
     ui->todolist->setModel(toDoModel);
@@ -18,6 +19,10 @@ DashboardWindow::DashboardWindow(QWidget *parent)
 
     setCurrentTime();
     timer->start(1000);
+
+    //connecting HttpManager
+    connect(httpManager, SIGNAL(WeatherJsonReady(QJsonObject *json)),
+            this, SLOT(processWeatherJson(QJsonObject *json)));
 }
 
 DashboardWindow::~DashboardWindow()

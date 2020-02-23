@@ -2,8 +2,8 @@
 #define HTTPMANAGER_H
 
 #include <QObject>
-#include <QtNetwork/QNetworkAccessManager>
-#include <QtNetwork/QNetworkReply>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 #include <QJsonDocument>
 #include <QJsonObject>
 
@@ -21,6 +21,7 @@ signals:
 
 private slots:
     void WeatherDownloadedHandler(QNetworkReply *reply);
+    void processWeatherJson(QJsonObject *json);
 
 private:
     QNetworkAccessManager *weatherAPIManager;
