@@ -17,10 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    dashboardwindow.cpp
+    dashboardwindow.cpp \
+    todomodel.cpp
 
 HEADERS += \
-    dashboardwindow.h
+    dashboardwindow.h \
+    todomodel.h
 
 FORMS += \
     dashboardwindow.ui

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QTimer>
 #include <QTime>
+#include "todomodel.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DashboardWindow; }
@@ -23,9 +24,12 @@ public:
 private slots:
     void setCurrentTime();
 
+    void on_actionOpen_to_do_list_triggered();
+
 private:
     Ui::DashboardWindow *ui;
     QTimer *timer;
 
+    ToDoModel *toDoModel;
 };
 #endif // DASHBOARDWINDOW_H

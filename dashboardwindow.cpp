@@ -1,12 +1,17 @@
 #include "dashboardwindow.h"
 #include "ui_dashboardwindow.h"
 
+#include <QFileDialog>
+#include <iostream>
+
 DashboardWindow::DashboardWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::DashboardWindow),
-    timer(new QTimer)
+    , ui(new Ui::DashboardWindow)
+    , timer(new QTimer)
+    , toDoModel (new ToDoModel(this))
 {
     ui->setupUi(this);
+    ui->todolist->setModel(toDoModel);
 
     connect(timer, SIGNAL(timeout()),
             this, SLOT(setCurrentTime()));
@@ -40,3 +45,12 @@ void DashboardWindow::setCurrentTime()
     ui->worldSecondLCD->display(second);
 }
 
+
+void DashboardWindow::on_actionOpen_to_do_list_triggered()
+{
+    QString fileName = QFileDialog::getOpenFileName(this,
+                                                    tr("Open To-do List"),"",
+                                                    tr("To-do List (*.csv);;All File (*)"));
+
+    std::cout << fileName.toStdString() << std::endl;
+}
