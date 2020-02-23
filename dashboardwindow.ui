@@ -14,7 +14,7 @@
    <string>DashboardWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: rgb(244, 244, 244);</string>
+   <string notr="true">color: rgb(252, 252, 252);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLCDNumber" name="hourLCD">
@@ -25,6 +25,12 @@
       <width>121</width>
       <height>121</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(25, 25, 25);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="digitCount">
      <number>2</number>
@@ -43,7 +49,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 6pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(65, 65, 65);</string>
     </property>
     <property name="text">
      <string>Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch, Wales</string>
@@ -59,7 +66,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(25, 25, 25);</string>
     </property>
     <property name="text">
      <string>Current Time</string>
@@ -73,6 +81,12 @@
       <width>121</width>
       <height>121</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(25, 25, 25);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="digitCount">
      <number>2</number>
@@ -89,6 +103,12 @@
       <width>121</width>
       <height>121</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(25, 25, 25);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="digitCount">
      <number>2</number>
@@ -109,6 +129,9 @@
       <height>71</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(65, 65, 65);</string>
+    </property>
     <property name="digitCount">
      <number>2</number>
     </property>
@@ -125,6 +148,9 @@
       <height>71</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(65, 65, 65);</string>
+    </property>
     <property name="digitCount">
      <number>2</number>
     </property>
@@ -140,6 +166,9 @@
       <width>71</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(65, 65, 65);</string>
     </property>
     <property name="digitCount">
      <number>2</number>
@@ -158,8 +187,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 6pt &quot;MS Shell Dlg 2&quot;;
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(65, 65, 65);</string>
     </property>
     <property name="text">
      <string>Greenich Standard Time</string>
@@ -168,11 +197,29 @@ font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QTableView" name="todolist">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>90</y>
+      <x>590</x>
+      <y>40</y>
       <width>281</width>
-      <height>271</height>
+      <height>291</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>228</x>
+      <y>460</y>
+      <width>181</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">alternate-background-color: transparent;
+backgounrd-color:transparent;
+selection-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>SHOULD PUT LABEL IMAGE HERE</string>
     </property>
    </widget>
   </widget>

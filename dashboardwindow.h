@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QTimer>
+#include <QTime>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DashboardWindow; }
@@ -16,10 +17,15 @@ public:
     DashboardWindow(QWidget *parent = nullptr);
     ~DashboardWindow();
 
+    //ideally, a table of timezones
+    int greenwich = 8;
+
+private slots:
+    void setCurrentTime();
+
 private:
     Ui::DashboardWindow *ui;
     QTimer *timer;
 
-    void setCurrentTime();
 };
 #endif // DASHBOARDWINDOW_H
