@@ -12,6 +12,7 @@ DashboardWindow::DashboardWindow(QWidget *parent)
     , httpManager (new HttpManager)
 {
     ui->setupUi(this);
+    // points to do list to tableview
     ui->todolist->setModel(toDoModel);
 
     connect(timer, SIGNAL(timeout()),
@@ -57,5 +58,5 @@ void DashboardWindow::on_actionOpen_to_do_list_triggered()
                                                     tr("Open To-do List"),"",
                                                     tr("To-do List (*.csv);;All File (*)"));
 
-    std::cout << fileName.toStdString() << std::endl;
+    toDoModel->openFile(fileName);
 }
