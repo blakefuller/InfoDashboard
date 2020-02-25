@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1354</width>
-    <height>927</height>
+    <width>1498</width>
+    <height>1331</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -250,6 +250,9 @@ background-color: rgb(255, 255, 255);</string>
       <height>1491</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
      <string notr="true">border-image: url(:/Lab 4 Images/google home.png);
 background-color:transparent
@@ -304,8 +307,8 @@ background-color:transparent
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1354</width>
-     <height>22</height>
+     <width>1498</width>
+     <height>29</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTools">
