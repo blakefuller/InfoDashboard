@@ -3,6 +3,7 @@
 
 #include <QFileDialog>
 #include <iostream>
+#include <QMessageBox>
 
 DashboardWindow::DashboardWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -14,6 +15,9 @@ DashboardWindow::DashboardWindow(QWidget *parent)
     ui->setupUi(this);
     // points to do list to tableview
     ui->todolist->setModel(toDoModel);
+
+    //open todolist
+    toDoModel->openFile("Todo.csv");
 
     connect(timer, SIGNAL(timeout()),
             this, SLOT(setCurrentTime()));
