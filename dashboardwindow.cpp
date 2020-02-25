@@ -26,8 +26,8 @@ DashboardWindow::DashboardWindow(QWidget *parent)
     timer->start(1000);
 
     //connecting HttpManager
-    connect(httpManager, SIGNAL(WeatherJsonReady(QJsonObject *json)),
-            this, SLOT(processWeatherJson(QJsonObject *json)));
+    connect(httpManager, SIGNAL(WeatherJsonReady(QJsonObject *)),
+            this, SLOT(processWeatherJson(QJsonObject *)));
 }
 
 DashboardWindow::~DashboardWindow()
@@ -67,5 +67,13 @@ void DashboardWindow::on_actionOpen_to_do_list_triggered()
 
 void DashboardWindow::on_pushButton_clicked()
 {
+    QString zip = ui->zipCodeEdit->text();
+    qDebug() << zip;
+    httpManager->sendWeatherRequest(zip);
+}
 
+void DashboardWindow::processWeatherJson(QJsonObject *json)
+{
+    qDebug() << "Json ready";
+    qDebug() << json->value("weather");
 }

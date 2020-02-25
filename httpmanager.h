@@ -21,7 +21,6 @@ signals:
 
 private slots:
     void WeatherDownloadedHandler(QNetworkReply *reply);
-    void processWeatherJson(QJsonObject *json);
 
 private:
     QNetworkAccessManager *weatherAPIManager;

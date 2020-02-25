@@ -4,7 +4,8 @@ HttpManager::HttpManager(QObject *parent) :
     QObject(parent),
     weatherAPIManager(new QNetworkAccessManager)
 {
-
+    connect(weatherAPIManager, SIGNAL(finished(QNetworkReply*)),
+            this, SLOT(WeatherDownloadedHandler(QNetworkReply*)));
 }
 
 HttpManager::~HttpManager()
@@ -41,9 +42,4 @@ void HttpManager::WeatherDownloadedHandler(QNetworkReply *reply)
     QJsonObject *jsonObj = new QJsonObject(jsonResponse.object());
 
     emit WeatherJsonReady(jsonObj);
-}
-
-void HttpManager::processWeatherJson(QJsonObject *json)
-{
-    qDebug() << json->value("weather");
 }
