@@ -259,6 +259,32 @@ background-color:transparent
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>390</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>weatherButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="weatherLabel">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>430</y>
+      <width>191</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
    <zorder>label</zorder>
    <zorder>hourLCD</zorder>
    <zorder>cityLabel</zorder>
@@ -270,6 +296,8 @@ background-color:transparent
    <zorder>worldHourLCD</zorder>
    <zorder>timeZoneLabel</zorder>
    <zorder>todolist</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>weatherLabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -277,7 +305,7 @@ background-color:transparent
      <x>0</x>
      <y>0</y>
      <width>1354</width>
-     <height>29</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTools">

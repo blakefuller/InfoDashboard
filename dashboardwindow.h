@@ -27,6 +27,8 @@ private slots:
 
     void on_actionOpen_to_do_list_triggered();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::DashboardWindow *ui;
     QTimer *timer;
