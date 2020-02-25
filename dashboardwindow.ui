@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1498</width>
-    <height>1331</height>
+    <width>1292</width>
+    <height>1114</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
    <widget class="QLCDNumber" name="hourLCD">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>190</y>
+      <x>290</x>
+      <y>370</y>
       <width>121</width>
       <height>121</height>
      </rect>
@@ -43,8 +43,8 @@ background-color:transparent;</string>
    <widget class="QLabel" name="cityLabel">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>330</y>
+      <x>290</x>
+      <y>510</y>
       <width>491</width>
       <height>20</height>
      </rect>
@@ -61,8 +61,8 @@ background-color:transparent;</string>
    <widget class="QLabel" name="currentTimeLabel">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>140</y>
+      <x>290</x>
+      <y>320</y>
       <width>181</width>
       <height>31</height>
      </rect>
@@ -79,8 +79,8 @@ background-color:transparent;</string>
    <widget class="QLCDNumber" name="minuteLCD">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>190</y>
+      <x>420</x>
+      <y>370</y>
       <width>121</width>
       <height>121</height>
      </rect>
@@ -102,8 +102,8 @@ background-color:transparent;</string>
    <widget class="QLCDNumber" name="secondLCD">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>190</y>
+      <x>560</x>
+      <y>370</y>
       <width>121</width>
       <height>121</height>
      </rect>
@@ -128,8 +128,8 @@ background-color:transparent;</string>
    <widget class="QLCDNumber" name="worldMinuteLCD">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>380</y>
+      <x>380</x>
+      <y>560</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -148,8 +148,8 @@ background-color:transparent;</string>
    <widget class="QLCDNumber" name="worldSecondLCD">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>380</y>
+      <x>470</x>
+      <y>560</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -168,8 +168,8 @@ color: rgb(65, 65, 65);</string>
    <widget class="QLCDNumber" name="worldHourLCD">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>380</y>
+      <x>290</x>
+      <y>560</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -188,8 +188,8 @@ background-color:transparent;</string>
    <widget class="QLabel" name="timeZoneLabel">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>350</y>
+      <x>290</x>
+      <y>530</y>
       <width>491</width>
       <height>20</height>
      </rect>
@@ -206,8 +206,8 @@ background-color:transparent;</string>
    <widget class="QTableView" name="todolist">
     <property name="geometry">
      <rect>
-      <x>810</x>
-      <y>180</y>
+      <x>850</x>
+      <y>360</y>
       <width>231</width>
       <height>411</height>
      </rect>
@@ -244,8 +244,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>-20</x>
-      <y>-340</y>
+      <x>10</x>
+      <y>-160</y>
       <width>1171</width>
       <height>1491</height>
      </rect>
@@ -265,9 +265,9 @@ background-color:transparent
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>390</y>
-      <width>80</width>
+      <x>330</x>
+      <y>750</y>
+      <width>111</width>
       <height>24</height>
      </rect>
     </property>
@@ -278,8 +278,8 @@ background-color:transparent
    <widget class="QLabel" name="weatherLabel">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>430</y>
+      <x>610</x>
+      <y>610</y>
       <width>191</width>
       <height>181</height>
      </rect>
@@ -291,8 +291,8 @@ background-color:transparent
    <widget class="QLineEdit" name="zipCodeEdit">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>350</y>
+      <x>330</x>
+      <y>700</y>
       <width>113</width>
       <height>24</height>
      </rect>
@@ -301,6 +301,23 @@ background-color:transparent
      <string>98119</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>1111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Lab 4 Images/boards-with-unfocused-background_1253-55.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>hourLCD</zorder>
    <zorder>cityLabel</zorder>
@@ -321,8 +338,8 @@ background-color:transparent
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1498</width>
-     <height>22</height>
+     <width>1292</width>
+     <height>29</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTools">
