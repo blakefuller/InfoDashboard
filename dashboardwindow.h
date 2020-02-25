@@ -29,6 +29,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void processWeatherJson(QJsonObject *json);
+
 private:
     Ui::DashboardWindow *ui;
     QTimer *timer;
