@@ -6,28 +6,29 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>941</width>
-    <height>690</height>
+    <width>1354</width>
+    <height>927</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>DashboardWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: rgb(252, 252, 252);</string>
+   <string notr="true">background-color: rgb(152, 152, 152);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLCDNumber" name="hourLCD">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>90</y>
+      <x>250</x>
+      <y>190</y>
       <width>121</width>
       <height>121</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(25, 25, 25);</string>
+     <string notr="true">color: rgb(25, 25, 25);
+background-color:transparent;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -42,15 +43,16 @@
    <widget class="QLabel" name="cityLabel">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>240</y>
+      <x>250</x>
+      <y>330</y>
       <width>491</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(65, 65, 65);</string>
+color: rgb(65, 65, 65);
+background-color:transparent;</string>
     </property>
     <property name="text">
      <string>Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch, Wales</string>
@@ -59,15 +61,16 @@ color: rgb(65, 65, 65);</string>
    <widget class="QLabel" name="currentTimeLabel">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>40</y>
+      <x>250</x>
+      <y>140</y>
       <width>181</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(25, 25, 25);</string>
+color: rgb(25, 25, 25);
+background-color:transparent;</string>
     </property>
     <property name="text">
      <string>Current Time</string>
@@ -76,14 +79,15 @@ color: rgb(25, 25, 25);</string>
    <widget class="QLCDNumber" name="minuteLCD">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>90</y>
+      <x>380</x>
+      <y>190</y>
       <width>121</width>
       <height>121</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(25, 25, 25);</string>
+     <string notr="true">color: rgb(25, 25, 25);
+background-color:transparent;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -98,14 +102,15 @@ color: rgb(25, 25, 25);</string>
    <widget class="QLCDNumber" name="secondLCD">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>90</y>
+      <x>520</x>
+      <y>190</y>
       <width>121</width>
       <height>121</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(25, 25, 25);</string>
+     <string notr="true">color: rgb(25, 25, 25);
+background-color:transparent;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -123,14 +128,15 @@ color: rgb(25, 25, 25);</string>
    <widget class="QLCDNumber" name="worldMinuteLCD">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>290</y>
+      <x>340</x>
+      <y>380</y>
       <width>71</width>
       <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(65, 65, 65);</string>
+     <string notr="true">color: rgb(65, 65, 65);
+background-color:transparent;</string>
     </property>
     <property name="digitCount">
      <number>2</number>
@@ -142,14 +148,15 @@ color: rgb(25, 25, 25);</string>
    <widget class="QLCDNumber" name="worldSecondLCD">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>290</y>
+      <x>430</x>
+      <y>380</y>
       <width>71</width>
       <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(65, 65, 65);</string>
+     <string notr="true">background-color:transparent;
+color: rgb(65, 65, 65);</string>
     </property>
     <property name="digitCount">
      <number>2</number>
@@ -161,14 +168,15 @@ color: rgb(25, 25, 25);</string>
    <widget class="QLCDNumber" name="worldHourLCD">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>290</y>
+      <x>250</x>
+      <y>380</y>
       <width>71</width>
       <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(65, 65, 65);</string>
+     <string notr="true">color: rgb(65, 65, 65);
+background-color:transparent;</string>
     </property>
     <property name="digitCount">
      <number>2</number>
@@ -180,15 +188,16 @@ color: rgb(25, 25, 25);</string>
    <widget class="QLabel" name="timeZoneLabel">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>260</y>
+      <x>250</x>
+      <y>350</y>
       <width>491</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(65, 65, 65);</string>
+color: rgb(65, 65, 65);
+background-color:transparent;</string>
     </property>
     <property name="text">
      <string>Greenich Standard Time</string>
@@ -197,10 +206,10 @@ color: rgb(65, 65, 65);</string>
    <widget class="QTableView" name="todolist">
     <property name="geometry">
      <rect>
-      <x>670</x>
-      <y>40</y>
-      <width>211</width>
-      <height>531</height>
+      <x>810</x>
+      <y>180</y>
+      <width>231</width>
+      <height>411</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -208,6 +217,19 @@ color: rgb(65, 65, 65);</string>
       <horstretch>0</horstretch>
       <verstretch>0</verstretch>
      </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
     </property>
     <property name="horizontalScrollBarPolicy">
      <enum>Qt::ScrollBarAlwaysOff</enum>
@@ -222,31 +244,39 @@ color: rgb(65, 65, 65);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>228</x>
-      <y>460</y>
-      <width>181</width>
-      <height>111</height>
+      <x>-20</x>
+      <y>-340</y>
+      <width>1171</width>
+      <height>1491</height>
      </rect>
     </property>
-    <property name="autoFillBackground">
-     <bool>true</bool>
-    </property>
     <property name="styleSheet">
-     <string notr="true">alternate-background-color: transparent;
-backgounrd-color:transparent;
-selection-color: transparent;</string>
+     <string notr="true">border-image: url(:/Lab 4 Images/google home.png);
+background-color:transparent
+</string>
     </property>
     <property name="text">
-     <string>SHOULD PUT LABEL IMAGE HERE</string>
+     <string/>
     </property>
    </widget>
+   <zorder>label</zorder>
+   <zorder>hourLCD</zorder>
+   <zorder>cityLabel</zorder>
+   <zorder>currentTimeLabel</zorder>
+   <zorder>minuteLCD</zorder>
+   <zorder>secondLCD</zorder>
+   <zorder>worldMinuteLCD</zorder>
+   <zorder>worldSecondLCD</zorder>
+   <zorder>worldHourLCD</zorder>
+   <zorder>timeZoneLabel</zorder>
+   <zorder>todolist</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>941</width>
+     <width>1354</width>
      <height>29</height>
     </rect>
    </property>
