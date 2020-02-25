@@ -288,6 +288,19 @@ background-color:transparent
      <string>TextLabel</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="zipCodeEdit">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>350</y>
+      <width>113</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>98119</string>
+    </property>
+   </widget>
    <zorder>label</zorder>
    <zorder>hourLCD</zorder>
    <zorder>cityLabel</zorder>
@@ -301,6 +314,7 @@ background-color:transparent
    <zorder>todolist</zorder>
    <zorder>pushButton</zorder>
    <zorder>weatherLabel</zorder>
+   <zorder>zipCodeEdit</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -308,7 +322,7 @@ background-color:transparent
      <x>0</x>
      <y>0</y>
      <width>1498</width>
-     <height>29</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTools">
