@@ -41,7 +41,7 @@ void DashboardWindow::setCurrentTime()
 
 
     QString hour = time.toString("hh");
-    QString worldHour = time.toString("hh+8");  //shifted 8 hours for greenwich time
+    QString worldHour = time.toString("hh+7");  //shifted 8 hours for greenwich time
     QString minute = time.toString("mm");
     QString second = time.toString("ss");
 
