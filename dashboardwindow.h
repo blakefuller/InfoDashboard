@@ -19,9 +19,6 @@ public:
     DashboardWindow(QWidget *parent = nullptr);
     ~DashboardWindow();
 
-    //ideally, a table of timezones
-    int greenwich = 8;
-
 private slots:
     void setCurrentTime();
 

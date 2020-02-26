@@ -39,7 +39,9 @@ void DashboardWindow::setCurrentTime()
 {
     QTime time = QTime::currentTime();
 
+
     QString hour = time.toString("hh");
+    QString worldHour = time.toString("hh+8");  //shifted 8 hours for greenwich time
     QString minute = time.toString("mm");
     QString second = time.toString("ss");
 
@@ -48,9 +50,8 @@ void DashboardWindow::setCurrentTime()
     ui->minuteLCD->display(minute);
     ui->secondLCD->display(second);
 
-    //shifted 8 hours for greenwich time
-    timezone = greenwich;
-    ui->worldHourLCD->display(hour+timezone);
+    //world time
+    ui->worldHourLCD->display(worldHour);
     ui->worldMinuteLCD->display(minute);
     ui->worldSecondLCD->display(second);
 }
