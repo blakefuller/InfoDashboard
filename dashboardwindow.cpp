@@ -76,5 +76,16 @@ void DashboardWindow::on_pushButton_clicked()
 void DashboardWindow::processWeatherJson(QJsonObject *json)
 {
     qDebug() << "Json ready";
-    qDebug() << json->value("weather");
+
+    QString weather = json->value("weather").toArray()[0].toObject()["main"].toString();
+    QString description = json->value("weather").toArray()[0].toObject()["description"].toString();
+    double temp = json->value("main").toObject()["temp"].toDouble();
+    double tempMin = json->value("main").toObject()["temp_min"].toDouble();
+    double tempMax = json->value("main").toObject()["temp_max"].toDouble();
+
+    qDebug() << weather;
+    qDebug() << description;
+    qDebug() << temp;
+    qDebug() << tempMin;
+    qDebug() << tempMax;
 }
