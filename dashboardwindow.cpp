@@ -4,11 +4,13 @@
 #include <QFileDialog>
 #include <iostream>
 #include <QMessageBox>
+#include <vector>
 
 DashboardWindow::DashboardWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::DashboardWindow)
     , timer(new QTimer)
+    , frameTimer(new QTimer)
     , toDoModel (new ToDoModel(this))
     , httpManager (new HttpManager)
 {
@@ -16,14 +18,23 @@ DashboardWindow::DashboardWindow(QWidget *parent)
     // points to do list to tableview
     ui->todolist->setModel(toDoModel);
 
-    //open todolist
-    toDoModel->openFile("Todo.csv");
-
+    // connect clock
     connect(timer, SIGNAL(timeout()),
             this, SLOT(setCurrentTime()));
-
     setCurrentTime();
     timer->start(1000);
+
+    // connect frame clock
+    connect(frameTimer, SIGNAL(timeout()),
+            this, SLOT(setFrameTime()));
+    setFrameTime();
+    frameTimer->start(10000);
+
+    frameNum = 0;
+    loadImage();
+    ui->frameLabel->setPixmap(pics);
+
+
 
     //connecting HttpManager
     connect(httpManager, SIGNAL(WeatherJsonReady(QJsonObject *)),
@@ -54,6 +65,36 @@ void DashboardWindow::setCurrentTime()
     ui->worldHourLCD->display(worldHour);
     ui->worldMinuteLCD->display(minute);
     ui->worldSecondLCD->display(second);
+}
+
+void DashboardWindow::setFrameTime()
+{
+    ui->frameLabel->setPixmap(pics);
+
+    if(frameNum < picNames.length())
+        frameNum++;
+    else
+        frameNum = 0;
+
+    loadImage();
+}
+
+void DashboardWindow::loadImage()
+{
+    picNames.prepend("19488752_1501993383192064_4566436695561068900_o.jpg");
+    picNames.prepend("37185133_1890616464329752_8201941175058300928_o.jpg");
+    picNames.prepend("37715743_1900109846713747_9207013816389337088_o.jpg");
+    picNames.prepend("39347_101496846575065_5129752_n.jpg");
+    picNames.prepend("418383_316157708442310_1953668505_n.jpg");
+    picNames.prepend("423690_322467191144695_1612927000_n.jpg");
+
+    QString picFile = picNames[frameNum];
+
+    if(pics.load(picFile))
+    {
+        std::cout << "Image loaded!" << std::endl;
+        pics = pics.scaled(ui->frameLabel->size(), Qt::KeepAspectRatioByExpanding);
+    }
 }
 
 
