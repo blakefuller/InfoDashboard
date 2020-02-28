@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>Lab 4 Images/google home.png</file>
         <file>Lab 4 Images/boards-with-unfocused-background_1253-55.jpg</file>
+        <file>Lab 4 Images/colon.png</file>
+        <file>Lab 4 Images/Colon.png</file>
     </qresource>
 </RCC>
