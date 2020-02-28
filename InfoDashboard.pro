@@ -50,4 +50,10 @@ DISTFILES += \
     PhotoFrame/37715743_1900109846713747_9207013816389337088_o.jpg \
     PhotoFrame/39347_101496846575065_5129752_n.jpg \
     PhotoFrame/418383_316157708442310_1953668505_n.jpg \
-    PhotoFrame/423690_322467191144695_1612927000_n.jpg
+    PhotoFrame/423690_322467191144695_1612927000_n.jpg \
+    cloudy.png \
+    drizzle.png \
+    partlysunny.png \
+    rainy.png \
+    snowy.png \
+    sunny.png

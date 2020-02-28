@@ -128,4 +128,24 @@ void DashboardWindow::processWeatherJson(QJsonObject *json)
     qDebug() << temp;
     qDebug() << tempMin;
     qDebug() << tempMax;
+
+    QString icon;
+
+    // determine weather icon
+    if(weather == "Clear")
+        icon = "sunny.png";
+    else if(weather == "Rain")
+        icon = "rainy.png";
+    else if(weather == "Drizzle")
+        icon = "drizzle.png";
+    else if(weather == "Clouds")
+        icon = "cloudy.png";
+    else if(weather == "Snow")
+        icon = "snowy.png";
+
+    if(weatherIcons.load(icon))
+    {
+        weatherIcons = weatherIcons.scaled(ui->weatherLabel->size(), Qt::KeepAspectRatioByExpanding);
+    }
+    ui->weatherLabel->setPixmap(weatherIcons);
 }

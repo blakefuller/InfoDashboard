@@ -39,6 +39,7 @@ private:
     QVector<QString> picNames;
 
     QPixmap pics;
+    QPixmap weatherIcons;
 
     ToDoModel *toDoModel;
     HttpManager *httpManager;
