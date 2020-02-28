@@ -148,6 +148,8 @@ void DashboardWindow::processWeatherJson(QJsonObject *json)
         icon = "cloudy.png";
     else if(weather == "Snow")
         icon = "snowy.png";
+    else if(weather == "Thunderstorm")
+        icon = "thunder.png";
 
     if(weatherIcons.load(icon))
     {

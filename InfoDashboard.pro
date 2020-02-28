@@ -56,4 +56,5 @@ DISTFILES += \
     partlysunny.png \
     rainy.png \
     snowy.png \
-    sunny.png
+    sunny.png \
+    thunder.png
