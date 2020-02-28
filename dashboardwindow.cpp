@@ -129,6 +129,12 @@ void DashboardWindow::processWeatherJson(QJsonObject *json)
     qDebug() << tempMin;
     qDebug() << tempMax;
 
+    QString infoText = description + "\n";
+    infoText += "current temp: " + QString::number(temp) + "\n";
+    infoText += "min: " + QString::number(tempMin) + "\n";
+    infoText += "max: " + QString::number(tempMax) + "\n";
+    ui->weatherDescription->setText(infoText);
+
     QString icon;
 
     // determine weather icon

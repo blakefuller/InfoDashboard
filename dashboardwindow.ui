@@ -265,23 +265,23 @@ background-color:transparent
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>750</y>
-      <width>111</width>
-      <height>24</height>
+      <x>300</x>
+      <y>720</y>
+      <width>91</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>weatherButton</string>
+     <string>Get Weather</string>
     </property>
    </widget>
    <widget class="QLabel" name="weatherLabel">
     <property name="geometry">
      <rect>
-      <x>480</x>
+      <x>430</x>
       <y>680</y>
-      <width>191</width>
-      <height>101</height>
+      <width>81</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="text">
@@ -291,10 +291,10 @@ background-color:transparent
    <widget class="QLineEdit" name="zipCodeEdit">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>700</y>
-      <width>113</width>
-      <height>24</height>
+      <x>300</x>
+      <y>680</y>
+      <width>91</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
@@ -330,6 +330,19 @@ background-color:transparent
      <string>photoFrame</string>
     </property>
    </widget>
+   <widget class="QLabel" name="weatherDescription">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>680</y>
+      <width>131</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>hourLCD</zorder>
@@ -346,6 +359,7 @@ background-color:transparent
    <zorder>weatherLabel</zorder>
    <zorder>zipCodeEdit</zorder>
    <zorder>frameLabel</zorder>
+   <zorder>weatherDescription</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -353,7 +367,7 @@ background-color:transparent
      <x>0</x>
      <y>0</y>
      <width>1292</width>
-     <height>21</height>
+     <height>30</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTools">
