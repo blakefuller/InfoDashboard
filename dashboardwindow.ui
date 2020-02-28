@@ -353,7 +353,7 @@ background-color:transparent
      <x>0</x>
      <y>0</y>
      <width>1292</width>
-     <height>29</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTools">
