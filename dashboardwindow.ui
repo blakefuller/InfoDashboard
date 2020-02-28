@@ -330,19 +330,6 @@ background-color:transparent
      <string>photoFrame</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="loadButton">
-    <property name="geometry">
-     <rect>
-      <x>680</x>
-      <y>600</y>
-      <width>80</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>loadButton</string>
-    </property>
-   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>hourLCD</zorder>
@@ -359,7 +346,6 @@ background-color:transparent
    <zorder>weatherLabel</zorder>
    <zorder>zipCodeEdit</zorder>
    <zorder>frameLabel</zorder>
-   <zorder>loadButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

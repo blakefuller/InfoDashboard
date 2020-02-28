@@ -69,14 +69,13 @@ void DashboardWindow::setCurrentTime()
 
 void DashboardWindow::setFrameTime()
 {
-    ui->frameLabel->setPixmap(pics);
-
     if(frameNum < picNames.length())
         frameNum++;
     else
         frameNum = 0;
 
     loadImage();
+    ui->frameLabel->setPixmap(pics);
 }
 
 void DashboardWindow::loadImage()
