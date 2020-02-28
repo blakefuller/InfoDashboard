@@ -1,5 +1,6 @@
 <RCC>
-    <qresource prefix="/.">
+    <qresource prefix="/">
         <file>Lab 4 Images/google home.png</file>
+        <file>Lab 4 Images/boards-with-unfocused-background_1253-55.jpg</file>
     </qresource>
 </RCC>

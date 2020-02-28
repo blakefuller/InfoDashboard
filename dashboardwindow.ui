@@ -6,41 +6,53 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>941</width>
-    <height>690</height>
+    <width>1292</width>
+    <height>1114</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>DashboardWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: rgb(244, 244, 244);</string>
+   <string notr="true">background-color: rgb(152, 152, 152);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLCDNumber" name="hourLCD">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>90</y>
+      <x>290</x>
+      <y>370</y>
       <width>121</width>
       <height>121</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(25, 25, 25);
+background-color:transparent;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
     <property name="digitCount">
      <number>2</number>
+    </property>
+    <property name="value" stdset="0">
+     <double>23.000000000000000</double>
     </property>
    </widget>
    <widget class="QLabel" name="cityLabel">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>240</y>
+      <x>290</x>
+      <y>510</y>
       <width>491</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 6pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(65, 65, 65);
+background-color:transparent;</string>
     </property>
     <property name="text">
      <string>Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch, Wales</string>
@@ -49,14 +61,16 @@
    <widget class="QLabel" name="currentTimeLabel">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>40</y>
+      <x>290</x>
+      <y>330</y>
       <width>181</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(25, 25, 25);
+background-color:transparent;</string>
     </property>
     <property name="text">
      <string>Current Time</string>
@@ -65,80 +79,125 @@
    <widget class="QLCDNumber" name="minuteLCD">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>90</y>
+      <x>420</x>
+      <y>370</y>
       <width>121</width>
       <height>121</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(25, 25, 25);
+background-color:transparent;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
     <property name="digitCount">
      <number>2</number>
+    </property>
+    <property name="value" stdset="0">
+     <double>59.000000000000000</double>
     </property>
    </widget>
    <widget class="QLCDNumber" name="secondLCD">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>90</y>
+      <x>560</x>
+      <y>370</y>
       <width>121</width>
       <height>121</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(25, 25, 25);
+background-color:transparent;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
     <property name="digitCount">
      <number>2</number>
+    </property>
+    <property name="value" stdset="0">
+     <double>59.000000000000000</double>
+    </property>
+    <property name="intValue" stdset="0">
+     <number>59</number>
     </property>
    </widget>
    <widget class="QLCDNumber" name="worldMinuteLCD">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>290</y>
+      <x>380</x>
+      <y>560</y>
       <width>71</width>
       <height>71</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(65, 65, 65);
+background-color:transparent;</string>
+    </property>
     <property name="digitCount">
      <number>2</number>
+    </property>
+    <property name="intValue" stdset="0">
+     <number>59</number>
     </property>
    </widget>
    <widget class="QLCDNumber" name="worldSecondLCD">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>290</y>
+      <x>470</x>
+      <y>560</y>
       <width>71</width>
       <height>71</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+color: rgb(65, 65, 65);</string>
+    </property>
     <property name="digitCount">
      <number>2</number>
+    </property>
+    <property name="intValue" stdset="0">
+     <number>59</number>
     </property>
    </widget>
    <widget class="QLCDNumber" name="worldHourLCD">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>290</y>
+      <x>290</x>
+      <y>560</y>
       <width>71</width>
       <height>71</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(65, 65, 65);
+background-color:transparent;</string>
+    </property>
     <property name="digitCount">
      <number>2</number>
+    </property>
+    <property name="intValue" stdset="0">
+     <number>23</number>
     </property>
    </widget>
    <widget class="QLabel" name="timeZoneLabel">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>260</y>
+      <x>290</x>
+      <y>530</y>
       <width>491</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 6pt &quot;MS Shell Dlg 2&quot;;
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(65, 65, 65);
+background-color:transparent;</string>
     </property>
     <property name="text">
      <string>Greenich Standard Time</string>
@@ -147,25 +206,170 @@ font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QTableView" name="todolist">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>90</y>
+      <x>790</x>
+      <y>370</y>
       <width>281</width>
-      <height>271</height>
+      <height>171</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::NoPen</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-160</y>
+      <width>1171</width>
+      <height>1491</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Lab 4 Images/google home.png);
+background-color:transparent
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>750</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>weatherButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="weatherLabel">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>680</y>
+      <width>191</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="zipCodeEdit">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>700</y>
+      <width>113</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>98119</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>1111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Lab 4 Images/boards-with-unfocused-background_1253-55.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="frameLabel">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>590</y>
+      <width>281</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>photoFrame</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>hourLCD</zorder>
+   <zorder>cityLabel</zorder>
+   <zorder>currentTimeLabel</zorder>
+   <zorder>minuteLCD</zorder>
+   <zorder>secondLCD</zorder>
+   <zorder>worldMinuteLCD</zorder>
+   <zorder>worldSecondLCD</zorder>
+   <zorder>worldHourLCD</zorder>
+   <zorder>timeZoneLabel</zorder>
+   <zorder>todolist</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>weatherLabel</zorder>
+   <zorder>zipCodeEdit</zorder>
+   <zorder>frameLabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>941</width>
+     <width>1292</width>
      <height>29</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionOpen_to_do_list"/>
+   </widget>
+   <addaction name="menuTools"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_to_do_list">
+   <property name="text">
+    <string>Open to-do list</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
