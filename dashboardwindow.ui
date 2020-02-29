@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1292</width>
-    <height>1114</height>
+    <width>1291</width>
+    <height>1142</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
    <widget class="QLCDNumber" name="hourLCD">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>370</y>
+      <x>260</x>
+      <y>390</y>
       <width>121</width>
       <height>121</height>
      </rect>
@@ -43,14 +43,23 @@ background-color:transparent;</string>
    <widget class="QLabel" name="cityLabel">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>510</y>
+      <x>300</x>
+      <y>540</y>
       <width>491</width>
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Lucida Sans</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+     <string notr="true">font: 10pt &quot;Lucida Sans&quot;;
 color: rgb(65, 65, 65);
 background-color:transparent;</string>
     </property>
@@ -61,14 +70,23 @@ background-color:transparent;</string>
    <widget class="QLabel" name="currentTimeLabel">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>330</y>
-      <width>181</width>
+      <x>300</x>
+      <y>340</y>
+      <width>211</width>
       <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Lucida Sans</family>
+      <pointsize>22</pointsize>
+      <weight>7</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+     <string notr="true">font: 63 22pt &quot;Lucida Sans&quot;;
 color: rgb(25, 25, 25);
 background-color:transparent;</string>
     </property>
@@ -79,8 +97,8 @@ background-color:transparent;</string>
    <widget class="QLCDNumber" name="minuteLCD">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>370</y>
+      <x>410</x>
+      <y>390</y>
       <width>121</width>
       <height>121</height>
      </rect>
@@ -103,7 +121,7 @@ background-color:transparent;</string>
     <property name="geometry">
      <rect>
       <x>560</x>
-      <y>370</y>
+      <y>390</y>
       <width>121</width>
       <height>121</height>
      </rect>
@@ -128,10 +146,10 @@ background-color:transparent;</string>
    <widget class="QLCDNumber" name="worldMinuteLCD">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>560</y>
-      <width>71</width>
-      <height>71</height>
+      <x>370</x>
+      <y>580</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -148,10 +166,10 @@ background-color:transparent;</string>
    <widget class="QLCDNumber" name="worldSecondLCD">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>560</y>
-      <width>71</width>
-      <height>71</height>
+      <x>440</x>
+      <y>580</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -168,10 +186,10 @@ color: rgb(65, 65, 65);</string>
    <widget class="QLCDNumber" name="worldHourLCD">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>560</y>
-      <width>71</width>
-      <height>71</height>
+      <x>300</x>
+      <y>580</y>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -188,28 +206,28 @@ background-color:transparent;</string>
    <widget class="QLabel" name="timeZoneLabel">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>530</y>
+      <x>300</x>
+      <y>560</y>
       <width>491</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
+     <string notr="true">font: 8pt &quot;Lucida Sans&quot;;
 color: rgb(65, 65, 65);
 background-color:transparent;</string>
     </property>
     <property name="text">
-     <string>Greenich Standard Time</string>
+     <string>Greenwich Standard Time</string>
     </property>
    </widget>
    <widget class="QTableView" name="todolist">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>370</y>
+      <x>780</x>
+      <y>390</y>
       <width>281</width>
-      <height>171</height>
+      <height>161</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -244,7 +262,7 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>-160</y>
       <width>1171</width>
       <height>1491</height>
@@ -265,48 +283,63 @@ background-color:transparent
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>750</y>
-      <width>111</width>
-      <height>24</height>
+      <x>300</x>
+      <y>740</y>
+      <width>91</width>
+      <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(172, 172, 172);
+font: 8pt &quot;Lucida Sans&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
-     <string>weatherButton</string>
+     <string>Get Weather</string>
     </property>
    </widget>
    <widget class="QLabel" name="weatherLabel">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>680</y>
-      <width>191</width>
-      <height>101</height>
+      <x>420</x>
+      <y>700</y>
+      <width>81</width>
+      <height>81</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;</string>
+    </property>
     <property name="text">
-     <string/>
+     <string>wIcon</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="zipCodeEdit">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>300</x>
       <y>700</y>
-      <width>113</width>
-      <height>24</height>
+      <width>91</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(172, 172, 172);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>98119</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>-20</x>
       <y>0</y>
-      <width>1281</width>
+      <width>1311</width>
       <height>1111</height>
      </rect>
     </property>
@@ -320,14 +353,220 @@ background-color:transparent
    <widget class="QLabel" name="frameLabel">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>590</y>
+      <x>780</x>
+      <y>570</y>
       <width>281</width>
-      <height>171</height>
+      <height>221</height>
      </rect>
     </property>
     <property name="text">
      <string>photoFrame</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="weatherDescription">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>750</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lucida Sans</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>weather</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="currentTimeLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>350</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lucida Sans</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Lucida Sans&quot;;
+color: rgb(25, 25, 25);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string>Tasks</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>360</y>
+      <width>111</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Lab 4 Images/colon.png);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>360</y>
+      <width>111</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Lab 4 Images/colon.png);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>560</y>
+      <width>51</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Lab 4 Images/colon.png);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>560</y>
+      <width>51</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Lab 4 Images/colon.png);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>680</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Lucida Sans&quot;;
+color: rgb(65, 65, 65);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string>Zip Code</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>374</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Lucida Sans&quot;;
+color: rgb(65, 65, 65);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string>Seattle, Washington</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="messageLabel">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>560</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 22pt &quot;Lucida Sans&quot;;
+color: rgb(25, 25, 25);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string>messageGif</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="curTempLabel">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>700</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 24pt &quot;Lucida Sans&quot;;
+color: rgb(25, 25, 25);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string>curTemp</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="descriptionLabel">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>700</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Lucida Sans&quot;;
+color: rgb(65, 65, 65);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string>description</string>
     </property>
    </widget>
    <zorder>label_2</zorder>
@@ -346,14 +585,25 @@ background-color:transparent
    <zorder>weatherLabel</zorder>
    <zorder>zipCodeEdit</zorder>
    <zorder>frameLabel</zorder>
+   <zorder>weatherDescription</zorder>
+   <zorder>currentTimeLabel_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>messageLabel</zorder>
+   <zorder>curTempLabel</zorder>
+   <zorder>descriptionLabel</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1292</width>
-     <height>29</height>
+     <width>1291</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTools">

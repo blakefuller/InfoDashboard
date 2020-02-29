@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QTimer>
 #include <QTime>
+#include <QPixmap>
 #include "todomodel.h"
 #include "httpmanager.h"
 
@@ -21,6 +22,9 @@ public:
 
 private slots:
     void setCurrentTime();
+    void setFrameTime();
+    void loadImage();
+    void loadMessageGif();
 
     void on_actionOpen_to_do_list_triggered();
 
@@ -31,6 +35,15 @@ private slots:
 private:
     Ui::DashboardWindow *ui;
     QTimer *timer;
+    QTimer *frameTimer;
+    int frameNum;
+    QVector<QString> picNames;
+
+    QPixmap pics;
+    QPixmap weatherIcons;
+    QMovie *messageGif;
+
+    QString zip;
 
     ToDoModel *toDoModel;
     HttpManager *httpManager;

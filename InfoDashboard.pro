@@ -37,3 +37,30 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     PhotoFrame.qrc \
     images.qrc
+
+DISTFILES += \
+    19488752_1501993383192064_4566436695561068900_o.jpg \
+    37185133_1890616464329752_8201941175058300928_o.jpg \
+    37715743_1900109846713747_9207013816389337088_o.jpg \
+    39347_101496846575065_5129752_n.jpg \
+    418383_316157708442310_1953668505_n.jpg \
+    423690_322467191144695_1612927000_n.jpg \
+    Makefile.Release \
+    PhotoFrame/19488752_1501993383192064_4566436695561068900_o.jpg \
+    PhotoFrame/37185133_1890616464329752_8201941175058300928_o.jpg \
+    PhotoFrame/37715743_1900109846713747_9207013816389337088_o.jpg \
+    PhotoFrame/39347_101496846575065_5129752_n.jpg \
+    PhotoFrame/418383_316157708442310_1953668505_n.jpg \
+    PhotoFrame/423690_322467191144695_1612927000_n.jpg \
+    afternoon.gif \
+    cloudy.png \
+    drizzle.png \
+    morning.gif \
+    night.gif \
+    partlysunny.png \
+    rain.png \
+    rainy.png \
+    snowy.png \
+    sun.png \
+    sunny.png \
+    thunder.png
