@@ -5,6 +5,7 @@
 #include <iostream>
 #include <QMessageBox>
 #include <vector>
+#include <QMovie>
 
 DashboardWindow::DashboardWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -24,16 +25,27 @@ DashboardWindow::DashboardWindow(QWidget *parent)
     setCurrentTime();
     timer->start(1000);
 
+    // connect message gif
+    connect(timer, SIGNAL(timeout()),
+            this, SLOT(loadMessageGif));
+    loadMessageGif();
+    timer->start(1000);
+
     // connect frame clock
     connect(frameTimer, SIGNAL(timeout()),
             this, SLOT(setFrameTime()));
     setFrameTime();
     frameTimer->start(10000);
 
+    // display pictures
     frameNum = 0;
     loadImage();
     ui->frameLabel->setPixmap(pics);
 
+    // display current weather
+    zip = "98119";
+    qDebug() << zip;
+    httpManager->sendWeatherRequest(zip);
 
 
     //connecting HttpManager
@@ -49,10 +61,12 @@ DashboardWindow::~DashboardWindow()
 void DashboardWindow::setCurrentTime()
 {
     QTime time = QTime::currentTime();
+    // shift current time by 8 hours
+    QTime worldTime = time.addSecs(28800);
 
 
     QString hour = time.toString("hh");
-    QString worldHour = time.toString("hh+7");  //shifted 8 hours for greenwich time
+    QString worldHour = worldTime.toString("hh");
     QString minute = time.toString("mm");
     QString second = time.toString("ss");
 
@@ -76,6 +90,7 @@ void DashboardWindow::setFrameTime()
 
     loadImage();
     ui->frameLabel->setPixmap(pics);
+
 }
 
 void DashboardWindow::loadImage()
@@ -96,6 +111,27 @@ void DashboardWindow::loadImage()
     }
 }
 
+void DashboardWindow::loadMessageGif()
+{
+    QTime time = QTime::currentTime();
+    int hour = time.hour();
+    QString message;
+
+    // determine what time and message to load
+    if (hour >= 6 && hour < 12)
+        message = "morning.gif";
+    else if (hour >= 12 && hour < 18)
+        message = "afternoon.gif";
+    else
+        message = "night.gif";
+
+    messageGif = new QMovie(message);
+    ui->messageLabel->setMovie(messageGif);
+    ui->messageLabel->setScaledContents(true);
+    messageGif->start();
+
+}
+
 
 void DashboardWindow::on_actionOpen_to_do_list_triggered()
 {
@@ -108,7 +144,7 @@ void DashboardWindow::on_actionOpen_to_do_list_triggered()
 
 void DashboardWindow::on_pushButton_clicked()
 {
-    QString zip = ui->zipCodeEdit->text();
+    zip = ui->zipCodeEdit->text();
     qDebug() << zip;
     httpManager->sendWeatherRequest(zip);
 }
@@ -129,19 +165,21 @@ void DashboardWindow::processWeatherJson(QJsonObject *json)
     qDebug() << tempMin;
     qDebug() << tempMax;
 
-    QString infoText = description + "\n";
-    infoText += "current temp: " + QString::number(temp) + "\n";
-    infoText += "min: " + QString::number(tempMin) + "\n";
-    infoText += "max: " + QString::number(tempMax) + "\n";
+    QString curTemp = QString::number(temp) + "°\n";
+    QString desc = description;
+    QString infoText = "Min: " + QString::number(tempMin) + "°     ";
+    infoText += "Max: " + QString::number(tempMax) + "°\n";
+    ui->descriptionLabel->setText(desc);
+    ui->curTempLabel->setText(curTemp);
     ui->weatherDescription->setText(infoText);
 
     QString icon;
 
     // determine weather icon
     if(weather == "Clear")
-        icon = "sunny.png";
+        icon = "sun.png";
     else if(weather == "Rain")
-        icon = "rainy.png";
+        icon = "rain.png";
     else if(weather == "Drizzle")
         icon = "drizzle.png";
     else if(weather == "Clouds")

@@ -24,6 +24,7 @@ private slots:
     void setCurrentTime();
     void setFrameTime();
     void loadImage();
+    void loadMessageGif();
 
     void on_actionOpen_to_do_list_triggered();
 
@@ -40,6 +41,9 @@ private:
 
     QPixmap pics;
     QPixmap weatherIcons;
+    QMovie *messageGif;
+
+    QString zip;
 
     ToDoModel *toDoModel;
     HttpManager *httpManager;
