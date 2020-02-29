@@ -6,6 +6,7 @@
 #include <QMessageBox>
 #include <vector>
 #include <QMovie>
+#include <QTimeZone>
 
 DashboardWindow::DashboardWindow(QWidget *parent)
     : QMainWindow(parent)
